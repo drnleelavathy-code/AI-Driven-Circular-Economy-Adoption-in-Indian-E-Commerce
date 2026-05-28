@@ -1,0 +1,55 @@
+# ============================================================
+# .gitignore — RF–ARIMAX CE Adoption Study
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.ipynb
+
+# Generated results (large files — regenerate by running the script)
+results/figures/
+results/tables/
+results/supplementary/
+
+# Joblib cache
+/tmp/tfsc_joblib_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Data files (if large)
+*.csv
+*.tif
+*.tiff
+*.json
+
+# Exceptions — keep these small reference files if needed
+# !results/tables/run_metadata_v12.json
