@@ -3,7 +3,6 @@
 
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Journal: TFSC](https://img.shields.io/badge/Journal-Technological%20Forecasting%20%26%20Social%20Change-orange)](https://www.journals.elsevier.com/technological-forecasting-and-social-change)
 
 ---
 
