@@ -1,0 +1,14 @@
+Dimension,Group,Adoption_pct,n
+Age,18-25,15.9,10063
+Age,26-35,15.2,10021
+Age,36-45,15.4,9998
+Age,46-55,15.1,10000
+Age,55+,15.6,9918
+City Tier,Tier-1,15.4,20888
+City Tier,Tier-2,15.4,16500
+City Tier,Tier-3,15.6,12612
+Income,Bottom 20%,15.3,17207
+Income,20-40%,15.6,20554
+Income,40-60%,15.7,9918
+Income,60-80%,14.5,2218
+Income,Top 20%,9.7,103

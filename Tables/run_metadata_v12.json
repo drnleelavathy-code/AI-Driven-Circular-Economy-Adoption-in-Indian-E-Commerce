@@ -1,0 +1,91 @@
+{
+  "version": "v12_final",
+  "seed": 42,
+  "N": 50000,
+  "n_trees": 200,
+  "max_depth": 20,
+  "max_features": 8,
+  "dgp_lin_var": 0.0,
+  "dgp_nl_var": 1.0,
+  "rf_r2": 0.9721,
+  "lr_r2": 0.5199,
+  "hgb_r2": 0.9693,
+  "en_r2": 0.5179,
+  "xgb_r2": 0.9692,
+  "lgb_r2": 0.9694,
+  "rf_mae": 0.0287,
+  "rf_rmse": 0.0358,
+  "impr_pct": 87.0,
+  "oob_r2": 0.972,
+  "cv_rf": "0.972\u00b10.001",
+  "cv_lr": "0.523\u00b10.005",
+  "r_nl1": 0.184,
+  "r_nl2": 0.031,
+  "r_nl3": 0.752,
+  "r_nl4": 0.06,
+  "top3_mdi_pct": 98.9,
+  "shap_top3_combined_pct": 98.7,
+  "v_age": 0.008,
+  "v_tier": 0.002,
+  "v_inc": 0.011,
+  "adoption_rate_pct": 15.5,
+  "feat_importances": {
+    "x_aware": 0.46125,
+    "x_avail": 0.51417,
+    "x_price": 0.01342,
+    "x_age": 0.00149,
+    "x_tier": 0.00032,
+    "x_income": 0.00151,
+    "x_quality": 0.0015,
+    "x_env_concern": 0.00151,
+    "x_social_norm": 0.00158,
+    "x_trust": 0.00154,
+    "x_prior_ce": 0.00153,
+    "x_device": 0.00019
+  },
+  "shap_global": {
+    "x_aware": 0.09711,
+    "x_avail": 0.12609,
+    "x_price": 0.01671,
+    "x_age": 0.00042,
+    "x_tier": 0.00014,
+    "x_income": 0.00042,
+    "x_quality": 0.00041,
+    "x_env_concern": 0.00047,
+    "x_social_norm": 0.00044,
+    "x_trust": 0.00044,
+    "x_prior_ce": 0.00042,
+    "x_device": 0.00012
+  },
+  "data_sources": {
+    "x_income_dist": "Beta(1.910, 4.700) \u2014 MoSPI HCE 2022-23",
+    "fidelity_pass": 10,
+    "quarterly_gmv_n": 40,
+    "arimax_aic": 180.28,
+    "arimax_mape_pct": 72.8,
+    "granger_results": {
+      "1": {
+        "F": 0.9288,
+        "p": 0.3418,
+        "sig": "n.s."
+      },
+      "2": {
+        "F": 0.7883,
+        "p": 0.4632,
+        "sig": "n.s."
+      },
+      "3": {
+        "F": 11.975,
+        "p": 0.0,
+        "sig": "\u2605 p<0.05"
+      },
+      "4": {
+        "F": 0.8775,
+        "p": 0.4909,
+        "sig": "n.s."
+      }
+    },
+    "state_panel_n": 100
+  },
+  "table3_footnote": "\u2020 XGBoost and LightGBM results are from a supplementary run with optional packages installed (xgboost==3.2.0, lightgbm==4.6.0); see GitHub repository."
+}

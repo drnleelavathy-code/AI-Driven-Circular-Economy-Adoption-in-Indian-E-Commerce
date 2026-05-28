@@ -1,0 +1,8 @@
+Model,Training,R2,MAE,RMSE,OOB_R2,CV_R2,RF_vs_LR_pct,Note
+RF (production),"Original 40,000",0.9721,0.0287,0.0358,0.972,0.972±0.001,87.0,warm_start 50→200 trees
+RF-SMOTE,"SMOTE-aug 67,646",0.9655,0.031,0.0398,0.9602,N/A,85.7,ΔR²≈0 vs RF — confirms robustness to class imbalance
+HistGradientBoosting,"Original 40,000",0.9693,0.0288,0.0376,N/A,N/A,86.4,early_stop n_iter=140; ~270× faster than RF
+LR (StandardScaler pipeline),"Original 40,000",0.5199,0.1189,0.1485,N/A,0.523±0.005,Baseline,Pipeline; linear baseline
+"ElasticNet (α=0.01, l1=0.5)","Original 40,000",0.5179,0.1175,0.1488,N/A,N/A,-0.4,L1+L2 regularised
+"XGBoost (n=500, depth=6)","Original 40,000",0.9692,0.0292,0.0376,N/A,N/A,86.4,xgboost==3.2.0; supplementary run — see Table 3 footnote†
+"LightGBM (n=500, depth=6)","Original 40,000",0.9694,0.0292,0.0375,N/A,N/A,86.5,lightgbm==4.6.0; supplementary run — see Table 3 footnote†

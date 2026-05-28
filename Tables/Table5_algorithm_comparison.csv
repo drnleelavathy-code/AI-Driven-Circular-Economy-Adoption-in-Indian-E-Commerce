@@ -1,0 +1,11 @@
+Algorithm,Category,R2,MAE,RMSE,Train_time_s,Complexity_nodes,vs_LR_impr_pct,n_iter,R2_per_sec
+LR (pipeline),Linear,0.5199,0.1189,0.1485,0.03,12,0.0,-,16.846
+Ridge α=1 (pipeline),Linear,0.5199,0.1189,0.1485,0.03,12,-0.0,None,16.459
+ElasticNet α=0.01 (pipeline),Linear,0.5179,0.1175,0.1488,0.06,12,-0.4,3,9.243
+DecisionTree d=5,Tree,0.9669,0.0311,0.039,0.48,63,86.0,-,2.008
+DecisionTree d=12,Tree,0.9636,0.0323,0.0409,0.89,5953,85.4,-,1.083
+ExtraTrees n=50,Ensemble,0.9453,0.0362,0.0501,2.65,635198,81.8,-,0.356
+HistGradientBoosting,Ensemble,0.9693,0.0288,0.0376,1.58,0,86.4,140,0.613
+RF d=12 n=50 (warm),Ensemble,0.9721,0.0286,0.0358,10.21,113594,87.0,-,0.095
+RF d=12 n=100 (production),Ensemble,0.9723,0.0286,0.0357,23.64,223940,87.0,-,0.041
+Moving Average (naive baseline),Linear,-0.0,0.1518,0.2143,0.0,1,-100.0,-,0.0

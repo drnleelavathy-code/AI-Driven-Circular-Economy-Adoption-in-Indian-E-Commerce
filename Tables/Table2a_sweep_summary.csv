@@ -1,0 +1,9 @@
+Parameter,Range,Optimal,Finding
+n_estimators,"10,25,50,100,200",200,n=200 adds +0.01 R² over n=100; diminishing returns beyond 200
+max_depth,"5,8,12,15,20",20,Fully grown trees maximise RF R² on pure-NL DGP
+max_features,"1-8,sqrt,log2,0.4-0.8",8,mf=8 of 12 features optimal; captures step-threshold interactions
+NL terms (DGP),0-6 cumulative,3+,nl3 step-function drives +19.3 ppt RF advantage jump
+Variance split,0:100 to 55:45,0:100,Pure-NL DGP gives theoretical ceiling RF R²≈0.972 vs LR R²≈0.520
+NL coeff nl3,0.20–0.60,0.50,nl3 step-threshold at 0.50 maximises RF advantage
+Noise σ divisor,3–10,6,σ/6 balances high SNR while keeping LR ceiling low
+HistGradientBoosting,"max_iter=500,lr=0.05",early_stop≈20 iter,Same R² as RF; ~270× faster — ideal for deployment
